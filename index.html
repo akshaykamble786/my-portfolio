@@ -1,394 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Akshay Kamble - Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Akshay Kamble is a Mumbai-based web developer building thoughtful interfaces and AI-powered products.">
+  <title>Akshay Kamble — Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <div class="terminal scanlines">
-    <!-- Terminal Chrome -->
-    <div class="terminal-chrome">
-      <div class="window-buttons">
-        <span class="dot accent-dot"></span>
-        <span class="dot dim-dot"></span>
-        <span class="dot bright-dot"></span>
-      </div>
-      <span class="terminal-title">akshay@portfolio:~</span>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Akshay Kamble home"><span class="brand-mark">AK</span><span>Akshay Kamble</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a><a href="#experience">Experience</a><a href="#about">About</a><a href="#contact">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- Header -->
-    <header class="section border-bottom">
-      <div class="container">
-        <div class="header-content">
-          <p class="muted">$ whoami</p>
-          <h1 class="text-glow">AKSHAY KAMBLE</h1>
-          <p class="accent">// Full Stack Developer</p>
-        </div>
-        <nav class="nav">
-          <a href="#about" class="nav-link"><span class="accent">$</span> cd about</a>
-          <a href="#experience" class="nav-link"><span class="accent">$</span> echo experience</a>
-          <a href="#projects" class="nav-link"><span class="accent">$</span> ls projects</a>
-          <a href="#resume" class="nav-link"><span class="accent">$</span> cat resume</a>
-          <a href="#contact" class="nav-link"><span class="accent">$</span> ./contact.sh</a>
-        </nav>
-      </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="section border-bottom">
-      <div class="container">
-        <p class="muted">$ cat about.txt</p>
-        <div class="grid">
-          <div class="card">
-            <p class="accent"># Description</p>
-            <p class="description">
-              Aspiring web developer based in Mumbai, passionate about the intersection of Web Development and
-              Generative AI. Recently graduated with a BSc in Information Technology from Nirmala Memorial Foundation College. Currently working as a Web Developer at Collective-S.
-            </p>
-          </div>
-          <div class="card">
-            <p class="muted">$ cat skills.json</p>
-            <pre class="code-block">{
-  <span class="accent">"languages"</span>: [
-    "HTML", "CSS", "JavaScript", 
-    "Core Java"
-  ],
-  <span class="accent">"libraries"</span>: [
-    "React", "Tailwind CSS", "Bootstrap"
-  ],
-  <span class="accent">"frameworks"</span>: [
-    "Next.js", "Express.js"
-  ],
-  <span class="accent">"databases"</span>: [
-    "SQL", "MongoDB"
-  ],
-  <span class="accent">"tools"</span>: [
-    "Git", "Github", "Stripe", 
-    "Google Firebase"
-  ]
-}</pre>
-          </div>
-        </div>
+  <main id="main">
+    <section id="top" class="hero container">
+      <div class="eyebrow"><span class="status-dot"></span> Available for thoughtful collaborations <span class="eyebrow-location">/ Mumbai, India</span></div>
+      <h1>I build digital products<br><em>with a point of view.</em></h1>
+      <div class="hero-footer">
+        <p class="hero-copy">Web developer working at the intersection of clear interfaces, reliable systems, and generative AI. I turn complex ideas into products people can actually use.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#work">See selected work <span>↘</span></a><a class="text-link" href="assets/resume.pdf" target="_blank" rel="noopener">View résumé <span>↗</span></a></div>
       </div>
     </section>
 
-    <section id="experience" class="section border-bottom">
-      <div class="container">
-        <p class="muted">$ echo "experience"</p>
-        <div class="card">
-          <p class="job-title">Web Developer</p>
-          <p class="job-meta">Collective S | December 2025 - Present</p>
-          <ul class="job-responsibilities">
-            <li>Building and maintaining web interfaces as part of the development team.</li>
-            <li>Contributing to UI components and reusable modules using JavaScript, React and JavaScript.</li>
-            <li>Collaborating with designers and backend developers to ship new features.</li>
-            <li>Fixing bugs and improving front end performance across ongoing projects.</li>
-          </ul>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section border-bottom">
-      <div class="container">
-        <p class="muted">$ ls -la ~/projects/</p>
-        <div class="projects-list">
-          <!-- Project 1 -->
-          <div class="card">
-            <div class="project-header">
-              <span class="accent text-glow-accent project-name">ai-saas-workspace/</span>
-            </div>
-            <p class="muted">$ cat README.md</p>
-            <img src="assets/brainstorm.png" alt="brainstorm" class="project-image" />
-            <p class="body-text">
-              Brainstorm is an AI-powered collaborative workspace designed to enhance creativity and productivity. It
-              leverages advanced language models to provide AI-powered suggestions, integrated AI chat, and content
-              generation as users type.
-            </p>
-            <p class="stack-line">
-              <span class="accent">STACK = </span>
-              <span class="dim">"Next.js, JavaScript, Tailwind CSS, Google Firebase, Stripe"</span>
-            </p>
-            <div class="project-links">
-              <a href="https://github.com/akshaykamble786/rainstorm" class="link" target="_blank"
-                rel="noopener noreferrer">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path
-                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                </svg>
-                <span>code</span>
-              </a>
-              <a href="https://brainstormm.vercel.app" class="link" target="_blank" rel="noopener noreferrer">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                  <polyline points="15 3 21 3 21 9" />
-                  <line x1="10" y1="14" x2="21" y2="3" />
-                </svg>
-                <span>demo</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- Project 2 -->
-          <div class="card">
-            <div class="project-header">
-              <span class="accent text-glow-accent project-name">password-manager/</span>
-            </div>
-            <p class="muted">$ cat README.md</p>
-            <img src="assets/sentinel.png" alt="sentinel" class="project-image" />
-            <p class="body-text">
-              Sentinel is an open-source password manager extension and web application designed to enhance online
-              security and user convenience. It allows users to securely store, manage, and autofill their passwords
-              across various websites.
-            </p>
-            <p class="stack-line">
-              <span class="accent">STACK = </span>
-              <span class="dim">"Node.js, Express.js, React, MongoDB, Tailwind CSS"</span>
-            </p>
-            <div class="project-links">
-              <a href="https://github.com/akshaykamble786/sentinel" class="link" target="_blank"
-                rel="noopener noreferrer">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path
-                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                </svg>
-                <span>code</span>
-              </a>
-              <a href="https://senntinel.vercel.app" class="link" target="_blank" rel="noopener noreferrer">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                  <polyline points="15 3 21 3 21 9" />
-                  <line x1="10" y1="14" x2="21" y2="3" />
-                </svg>
-                <span>demo</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- Project 3 -->
-          <div class="card">
-            <div class="project-header">
-              <span class="accent text-glow-accent project-name">ai-ebook-reader/</span>
-            </div>
-            <p class="muted">$ cat README.md</p>
-            <img src="assets/lexora.png" alt="lexora" class="project-image" />
-            <p class="body-text">
-              Lexora is an AI-powered e-book reader designed to enhance the reading experience through advanced features
-              and intelligent assistance. It leverages generative AI services to provide AI-powered page visualizations
-              and explanations, keyword search, progress tracker and word definitions.
-            </p>
-            <p class="stack-line">
-              <span class="accent">STACK = </span>
-              <span class="dim">"React, JavaScript, Tailwind CSS, Base44"</span>
-            </p>
-            <div class="project-links">
-              <a href="https://github.com/akshaykamble786/lexora" class="link" target="_blank"
-                rel="noopener noreferrer">
-                <svg class=" icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path
-                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                </svg>
-                <span>code</span>
-              </a>
-              <a href="https://lexora.base44.app" class="link" target="_blank" rel="noopener noreferrer">
-                <svg class=" icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                  <polyline points="15 3 21 3 21 9" />
-                  <line x1="10" y1="14" x2="21" y2="3" />
-                </svg>
-                <span>demo</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- Project 4 -->
-          <div class="card">
-            <div class="project-header">
-              <span class="accent text-glow-accent project-name">earth-tok/</span>
-            </div>
-            <p class="muted">$ cat README.md</p>
-            <img src="assets/earth-tok.png" alt="earth-tok" class="project-image" />
-            <p class="body-text">
-              Earth-Tok is a web application that combines the addictive nature of TikTok with the thrill of
-              exploration. Users can swipe through a curated feed of random locations from around the globe, each
-              presented with stunning visuals and free-form exploration.
-            </p>
-            <p class="stack-line">
-              <span class="accent">STACK = </span>
-              <span class="dim">"TypeScript, Next.js, React, Tailwind CSS, Bolt"</span>
-            </p>
-            <div class="project-links">
-              <a href="https://github.com/akshaykamble786/earth-tok" class="link" target="_blank"
-                rel="noopener noreferrer">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path
-                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                </svg>
-                <span>code</span>
-              </a>
-              <a href="https://earth-tok.vercel.app" class="link" target="_blank" rel="noopener noreferrer">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                  <polyline points="15 3 21 3 21 9" />
-                  <line x1="10" y1="14" x2="21" y2="3" />
-                </svg>
-                <span>demo</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="project-header">
-              <span class="accent text-glow-accent project-name">3d-bubble-wrap/</span>
-            </div>
-            <p class="muted">$ cat README.md</p>
-            <img src="assets/poppop.png" alt="poppop" class="project-image" />
-            <p class="body-text">
-              PopPop is a addictive, lightweight, browser-based application 3D virtual bubble wrap simulator designed to
-              provide stress relief and entertainment.
-            </p>
-            <p class="stack-line">
-              <span class="accent">STACK = </span>
-              <span class="dim">"JavaScript, Three.js</span>
-            </p>
-            <div class="project-links">
-              <a href="https://github.com/akshaykamble786/poppop" class="link" target="_blank"
-                rel="noopener noreferrer">
-                <svg class=" icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path
-                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                </svg>
-                <span>code</span>
-              </a>
-              <a href="https://popppop.vercel.app" class="link" target="_blank" rel="noopener noreferrer">
-                <svg class=" icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                  <polyline points="15 3 21 3 21 9" />
-                  <line x1="10" y1="14" x2="21" y2="3" />
-                </svg>
-                <span>demo</span>
-              </a>
-            </div>
-          </div>
-        </div>
+    <section id="work" class="section container">
+      <div class="section-heading"><span class="section-index">01 / Work</span><div><h2>Selected projects</h2><p>A few things I’ve designed, built, and shipped.</p></div></div>
+      <div class="project-list">
+        <article class="project-row">
+          <div class="project-number">01</div><div class="project-info"><div class="project-topline"><h3>Brainstorm</h3><a class="circle-link" href="#" aria-label="Open Brainstorm project">↗</a></div><p>An AI-powered collaborative workspace that helps ideas become clearer while you work.</p><div class="tags"><span>Next.js</span><span>Firebase</span><span>Stripe</span></div></div><img src="assets/brainstorm.png" alt="Brainstorm collaborative workspace interface" loading="lazy">
+        </article>
+        <article class="project-row">
+          <div class="project-number">02</div><div class="project-info"><div class="project-topline"><h3>Sentinel</h3><a class="circle-link" href="#" aria-label="Open Sentinel project">↗</a></div><p>A password manager extension and web app designed to make secure habits feel effortless.</p><div class="tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div></div><img src="assets/sentinel.png" alt="Sentinel password manager interface" loading="lazy">
+        </article>
+        <article class="project-row">
+          <div class="project-number">03</div><div class="project-info"><div class="project-topline"><h3>Lexora</h3><a class="circle-link" href="#" aria-label="Open Lexora project">↗</a></div><p>An AI e-book reader with visualizations, explanations, search, and a calmer way to learn.</p><div class="tags"><span>React</span><span>Tailwind CSS</span><span>Generative AI</span></div></div><img src="assets/lexora.png" alt="Lexora AI ebook reader interface" loading="lazy">
+        </article>
+        <article class="project-row">
+          <div class="project-number">04</div><div class="project-info"><div class="project-topline"><h3>Earth-Tok</h3><a class="circle-link" href="#" aria-label="Open Earth-Tok project">↗</a></div><p>A swipeable journey through the world, built for curiosity and free-form exploration.</p><div class="tags"><span>TypeScript</span><span>Next.js</span><span>React</span></div></div><img src="assets/earth-tok.png" alt="Earth-Tok location discovery interface" loading="lazy">
+        </article>
+        <article class="project-row">
+          <div class="project-number">05</div><div class="project-info"><div class="project-topline"><h3>PopPop</h3><a class="circle-link" href="#" aria-label="Open PopPop project">↗</a></div><p>A lightweight 3D bubble wrap simulator for a small moment of satisfying relief.</p><div class="tags"><span>JavaScript</span><span>Three.js</span></div></div><img src="assets/poppop.png" alt="PopPop 3D bubble wrap simulator" loading="lazy">
+        </article>
       </div>
     </section>
 
-    <!-- Resume Section -->
-    <section id="resume" class="section border-bottom">
+    <section id="experience" class="section section-tint">
       <div class="container">
-        <p class="muted">$ cat resume.md</p>
-        <div class="grid grid-3">
-          <div class="card col-span-2">
-            <p class="accent section-title">## Education</p>
-
-            <div class="experience-item">
-              <p class="job-title">B.Sc.INFORMATION TECHNOLOGY</p>
-              <p class="job-meta">Nimrala Memorial Foundation College | 2022 - 2025</p>
-              <p>CGPI: 8.83/10</p>
-            </div>
-
-            <div class="experience-item">
-              <p class="job-title">H.S.C</p>
-              <p class="job-meta">Nimrala Memorial Foundation College | 2018 - 2020</p>
-              <p>- 59.23%</p>
-            </div>
-
-            <div class="experience-item">
-              <p class="job-title">S.S.C</p>
-              <p class="job-meta">St. Francis High School | 2018</p>
-              <p>- 87.40%</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <p class="accent section-title">## Technical Achievements</p>
-            <div class="education-item">
-              <p class="job-title">- 300+ GitHub contributions since 2024</p>
-              <p class="job-title">- 120+ GitHub commits in 2025</p>
-              <p class="job-title">- 9 days of contribution streak</p>
-              <p class="job-title mg-2">- Contributed to 20+ repositories using JavaScript, React, Next.js and Node.js
-              </p>
-
-              <p class="accent section-title">## Certifications</p>
-              <div class="education-item">
-                <p class="job-title"> The Complete JavaScript Course</p>
-                <p class="job-title"> The Ultimate React Course </p>
-                <p class="job-title"> The Complete SQL Bootcamp</p>
-                <p class="job-title"> GenAI Job Simulation</p>
-              </div>
-
-              <a href="public/resume.pdf" class="download-link" download="resume.pdf">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                  <polyline points="7 10 12 15 17 10" />
-                  <line x1="12" y1="15" x2="12" y2="3" />
-                </svg>
-                <span>$ wget resume.pdf</span>
-              </a>
-            </div>
-          </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <div class="container">
-        <p class="muted">$ ./contact.sh</p>
-        <div class="card">
-          <p class="accent section-title"># Output:</p>
-          <div class="contact-grid">
-            <div class="contact-item">
-              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                <polyline points="22,6 12,13 2,6" />
-              </svg>
-              <p class="contact-label">EMAIL</p>
-              <a href="mailto:kambleakshay776@gmail.com" class="contact-value">kambleakshay776@gmail.com</a>
-            </div>
-
-            <div class="contact-item">
-              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path
-                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-              </svg>
-              <p class="contact-label">GITHUB</p>
-              <a href="https://github.com/akshaykamble786" class="contact-value" target="_blank"
-                rel="noopener noreferrer">@akshaykamble786</a>
-            </div>
-
-            <div class="contact-item">
-              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                <rect x="2" y="9" width="4" height="12" />
-                <circle cx="4" cy="4" r="2" />
-              </svg>
-              <p class="contact-label">LINKEDIN</p>
-              <a href="https://www.linkedin.com/in/akshay-kamble-26b308255" class="contact-value" target="_blank"
-                rel="noopener noreferrer">/in/akshay-kamble</a>
-            </div>
-          </div>
-
-          <div class="contact-footer">
-            <p><span class="accent">echo</span> "Let's build something that works."<span class="cursor-blink">_</span>
-            </p>
-          </div>
-        </div>
+        <div class="section-heading"><span class="section-index">02 / Experience</span><div><h2>Currently in the work</h2><p>Learning by shipping with a good team.</p></div></div>
+        <div class="experience-row"><div><h3>Web Developer <span>·</span> Collective-S</h3><p>Building and maintaining web interfaces, reusable UI components, and new features across ongoing projects. I collaborate with designers and backend developers, fix bugs, and keep performance moving in the right direction.</p></div><time>Dec 2025 — Present</time></div>
+        <div class="experience-row"><div><h3>B.Sc. Information Technology <span>·</span> NMFC</h3><p>Graduated with a CGPI of 8.83/10, with a focus on the practical side of software and the curiosity to keep learning beyond the syllabus.</p></div><time>2022 — 2025</time></div>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <p><span class="accent">#</span> © 2025 AKSHAY KAMBLE | <span class="foreground">exit 0</span></p>
-      </div>
-    </footer>
-  </div>
+    <section id="about" class="section container about-grid">
+      <div class="section-heading"><span class="section-index">03 / About</span><div><h2>Useful by design.</h2><p>The approach behind the work.</p></div></div>
+      <div class="about-content"><p class="lead">I’m an aspiring web developer based in Mumbai, interested in the intersection of web development and generative AI.</p><p>My favorite part of the process is the middle: making sense of an ambiguous idea, finding the simplest useful shape, and building the details until the product feels obvious.</p><a class="text-link" href="https://github.com/akshaykamble786" target="_blank" rel="noopener">More on GitHub <span>↗</span></a></div>
+    </section>
 
+    <section class="skills-section container"><div class="skills-panel"><div class="skills-intro"><span class="section-index section-index-light">Toolbox / 04</span><h2>Comfortable across<br>the stack.</h2><p>Always learning, usually building.</p></div><div class="skills-groups"><div><span class="skill-label">Languages</span><p>HTML · CSS · JavaScript · Core Java</p></div><div><span class="skill-label">Libraries & frameworks</span><p>React · Next.js · Express.js · Tailwind CSS</p></div><div><span class="skill-label">Data & tools</span><p>SQL · MongoDB · Git · GitHub · Stripe · Firebase</p></div></div></div></section>
+
+    <section id="contact" class="contact-section container"><span class="section-index">05 / Contact</span><h2>Have something<br><em>worth building?</em></h2><p>Tell me what you’re working on. I’m always up for a thoughtful conversation and a useful next step.</p><a class="button button-primary" href="mailto:kambleakshay776@gmail.com">Start a conversation <span>↗</span></a></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-wrap"><span>© 2026 Akshay Kamble</span><div><a href="mailto:kambleakshay776@gmail.com">Email</a><a href="https://github.com/akshaykamble786" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/akshay-kamble" target="_blank" rel="noopener">LinkedIn</a></div><span class="footer-top"><a href="#top">Back to top ↑</a></span></div></footer>
   <script src="script.js"></script>
 </body>
-
 </html>
